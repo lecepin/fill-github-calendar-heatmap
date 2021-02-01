@@ -1,19 +1,19 @@
 #!/bin/bash
 
-day=2
+day=0
 
-while ((day<31))
+while ((day<28))
 do
 	((day++))
     _day=`printf "%02d\n" $day`    
-    date "01${_day}080821"
+    date "02${_day}080821"
 
     echo "$(date)" > s.txt
 
     git add .
     git commit -m "${RANDOM}"
 
-    sleep 2s
+    sleep 2
 done
 
 
