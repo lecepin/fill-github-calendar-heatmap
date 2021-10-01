@@ -2,11 +2,11 @@
 
 day=0
 
-while ((day<30))
+while ((day<31))
 do
 	((day++))
     _day=`printf "%02d\n" $day`    
-    date "09${_day}080821"
+    date "10${_day}080821"
 
     echo "$(date)" > s.txt
 
