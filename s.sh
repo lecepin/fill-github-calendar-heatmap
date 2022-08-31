@@ -4,7 +4,7 @@ day=0
 
 while ((day<30))
 do
-	((day++))
+    ((day++))
     _day=`printf "%02d\n" $day`    
     date "08${_day}080822"
 
